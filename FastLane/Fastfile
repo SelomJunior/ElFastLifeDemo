@@ -1,0 +1,13 @@
+lane :bonjour do
+
+#	if UI.confirm("Sure ?")
+
+#		UI.success "Cooooooooooool !"
+#	else
+#		UI.error "Hmmm ?"
+#	end
+	scan(
+		code_coverage: true
+		)
+	xcov
+end
