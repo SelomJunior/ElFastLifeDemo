@@ -1,0 +1,27 @@
+lane :bonjour do
+
+#	if UI.confirm("Sure ?")
+
+#		UI.success "Cooooooooooool !"
+#	else
+#		UI.error "Hmmm ?"
+#	end
+	scan(
+		code_coverage: true
+		)
+	xcov
+end
+
+lane :deploy do
+	if git_branch() == "master"
+		version = get_version_number()
+		set_github_release(
+			repository_name: "SelomJunior/ElFastLifeDemo",
+			name: version,#Nom de la version sur GitHub
+			tag_name: "v#{version}",
+			description: changelog_from_git_commits(),
+			commitish: "master"
+		)
+	end
+
+end
