@@ -408,6 +408,7 @@
 				ECEC99FB1E1F8731000AF987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECEC99FC1E1F8731000AF987 /* Build configuration list for PBXNativeTarget "ElFastLifeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +417,7 @@
 				ECEC99FE1E1F8731000AF987 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
